@@ -191,11 +191,9 @@ footer {
 }
 
 .todoValue {
- color: #900;
   text-decoration: none;
 }
 .todoValue:hover {
-  color: red;
   position: relative;
 }
 
