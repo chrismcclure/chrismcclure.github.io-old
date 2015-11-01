@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select User</title>
+
+      <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- My sweet ass stlyes that will rock your eyeballs-->
+    <link rel="stylesheet" href="todocss.css">
+    <!--Fonts-->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans|Dosis:400,800" rel="stylesheet" type="text/css" />
+</head>
+<body  onload="popluarToDoLists(); ">
+
+    <div class="container-fluid header">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <a class="navbar-brand" href="#">Your Super Cool To Do List!</a>
+    </div>
+
+ </nav>
+</div>
+
+
+
+<div class="jumbotron">
+  <div class="container">
+      <h1>Your Super Cool To Do List</h1>
+      <h2>The Best To Do List Ever!</h2>
+  </div>
+</div>
+
+<div class="help hide">
+     <h2 class="imageH2">I'm Leonidas, King of the Spartans and </h2>
+   <div class="imageholder">
+    <img src="images/css-angry-king.jpg"  class="circle "alt="king face">
+    </div>
+
+      <p>your helper while creating and maintaining your to do lists.  Any time you need help, click the orange help button on the top navbar and my 300 Spartans and I will be at your service.</p>
+    <p>I see there are no current list avialable.</p>
+    <p>  Your first step is to create a list.</p>
+</div>
+
+<div class="selectUser bluediv">
+    <h2> Please Select Your To Do List</h2>
+    <ul id="users">
+    <p id="noUsers"></p>
+    </ul>
+</div>
+
+       <h2 id="or">OR</h2>
+    <div class="bluediv">
+         <h2>Create A New Personal To Do List</h2>
+        <p id="dupName"></p>
+        <p id="inputNewUser">Input Your Name:</p> <p><input type="text" id="username" onkeydown="engageButton()" oninput="enableButtons(username.value)" placeholder="Who's To Do List Is This?" autofocus> </p>
+        <p>
+        <button class="btn btn-default btn-lg" id="button" disabled onclick="makeNewUserObject(username.value)">Click To Make A New To Do List</button>
+        </p>
+
+</div>
+
+
+
+
+    <footer class="footer">
+        <p class="footerItems">&copy;2015 McClure Industries</p>
+        <p class="footerItems"><a href="https://github.com/chrismcclure" target="_blank"><img src="images/github_icon.png" height="40" width="40" alt="GitHub Icon"> My GitHub Account.</a></p>
+         <p class="footerItems">Chris Rules!</p>
+    </footer>
+
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!--Javascript file that I built with my own hands-->
+    <script type="text/javascript" src="todojs.js"> </script>
+</body>
+</html>

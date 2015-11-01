@@ -1,0 +1,278 @@
+
+
+body {
+    background-color: white;
+}
+.header {}
+.listholder {
+    width: 45%;
+    margin: 0 auto;
+}
+
+li{
+    list-style-type: none;
+    padding-top: 3px;
+    margin-bottom: 10px;
+}
+
+li > label {
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 90%;
+    text-overflow: ellipsis;
+    vertical-align: bottom;
+    margin: 0;
+}
+
+
+ul {
+    padding: 0;
+    margin-left: 10px;
+}
+.bluediv, .help {
+    width: 60%;
+    border: 1px solid black;
+    background-color: cornflowerblue;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+
+/*Css for the help divs*/
+.help{
+    background-color: yellow;
+    padding: 10px 10% 10px 10%;
+}
+
+.sidehelp, .sidehelp2 {
+	width: 12%;
+    float: right;
+    margin-right: 5%;
+    border: 1px solid black;
+    background-color: yellow;
+    padding: 1%;
+    margin-bottom: 10px;
+
+}
+
+.hide{
+    display: none;
+}
+
+.circle{
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+    border-radius: 100%;
+    vertical-align: baseline;
+}
+
+.imageholder{
+   display: block;
+    width: 20%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.imageholder-2 {
+	width: 60%;
+    height: 60%;
+    margin: 0 auto;
+}
+
+.help > p {
+    font-size: 18px;
+	 text-align: center;
+}
+
+.help > p:last-of-type{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.todoitems {
+    padding-bottom: 50px;
+}
+label {
+    font-size: 20px;
+    display: inline-block;
+}
+li [type=checkbox] {
+    height: 20px;
+    width: 20px;
+    margin-top: 0;
+    margin-right: 8px;
+    display: inline-block;
+}
+.InputArea {}
+form > p {
+    margin-bottom: 18px;
+}
+#inputlabel {
+    margin-bottom: 10px;
+}
+h1,
+h2,
+h3,
+h4 {
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+}
+p {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+.jumbotron {
+    background-color: #bbb;
+    padding-top: 80px;
+    width: 100%;
+}
+.numberDisplay {
+    font-size: 20px;
+}
+#total,
+#totaldone {
+    font-weight: bold;
+}
+.container h2 {
+    margin-bottom: 0px;
+}
+footer {
+    background-color: #bbb;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerItems {
+    margin-right: 50px;
+}
+.my-bar-btn {
+    margin-left: 30px;
+}
+.hide-div {
+    display: none;
+}
+.listName {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 46px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: lowercase;
+    text-transform: capitalize;
+}
+.listName:hover {
+    text-decoration: none;
+}
+#additem {
+    font-weight: bold;
+    color: firebrick;
+    font-size: 20px;
+}
+#dupName {
+    color: red;
+    font-weight: bold;
+}
+.deleteListButton {
+    margin-left: 20px;
+}
+.listholderlist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+.userName {
+    text-transform: capitalize;
+}
+
+.todoValue {
+ color: #900;
+  text-decoration: none;
+}
+.todoValue:hover {
+  color: red;
+  position: relative;
+}
+
+/*This is almost entirly copy and pasted from stackoverflow */
+.todoValue[data-title]:hover:after {
+    content: attr(data-title);
+    padding: 4px 8px;
+    color: #333;
+    position: absolute;
+    left: 50px;
+    top: 100%;
+    font-size: 20px;
+    z-index: 20;
+    white-space: normal;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0px 0px 4px #222;
+    -webkit-box-shadow: 0px 0px 4px #222;
+    box-shadow: 0px 0px 4px #222;
+    background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #eeeeee), color-stop(1, #cccccc));
+    background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc);
+    background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+    background-image: -ms-linear-gradient(top, #eeeeee, #cccccc);
+    background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
+}
+@media screen and (max-width: 1300px) {
+    .listholder {
+
+    width: 60%;
+    }
+     li > label {
+        max-width: 80%;
+    }
+    .sidehelp, .sidehelp2 {
+    width:  60%;
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 20px;
+    padding: 2%;
+    }
+    .imageholder-2 {
+	width: 20%;
+    }
+
+}
+
+
+@media screen and (max-width: 1000px) {
+    .listholder {
+
+    width: 80%;
+    }
+     li > label {
+        max-width: 80%;
+    }
+
+    .sidehelp, , .sidehelp2 {
+	width:  60%;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+
+    .bluediv {
+	width: 95%;
+}
+    .listholder {
+        width: 100%;
+}
+    li > label {
+        max-width: 80%;
+    }
+
+    .sidehelp, .sidehelp2{
+	width:  95%;
+    }
+}
