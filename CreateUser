@@ -1,0 +1,20 @@
+extra code that works, but I don't need
+
+//Gets value from URL is I choose to GET from prevoius pages form,  Which I don't
+function GetParmsFromUrl(){
+   var myParam = location.search.split('NewListName=')[1];
+    checkNullParam(myParam);
+
+    function checkNullParam(myParam){
+    if(myParam == null){
+    break;}
+    else(myParam.includes("+"))
+    {
+    cleanName = myParam.replace(/\+/g, " ");
+        }
+    return cleanName;
+    }
+    
+       // add list items to local storage
+    stuffOnYourBrowser.setItem(cleanName, user.todoTasks.push(item));
+}
