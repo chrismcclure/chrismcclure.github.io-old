@@ -1,95 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Your To Do List!</title>
-
-      <!-- Latest compiled and minified CSS -->
+    <title>Chris McClure</title>
+    <!-- Latest compiled and minified Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <!-- My sweet ass stlyes that will rock your eyeballs-->
-    <link rel="stylesheet" href="todocss.css">
-    <!--Fonts-->
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans|Dosis:400,800" rel="stylesheet" type="text/css" />
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="CSS/maincss.css">
 
-
-<meta property="og:type" content="Web Application" />
-<meta property="og:title" content="Your Supecool To Do List!" />
-<meta property=”og:description” content=”A personal to do app that is build on javascript and jquery”/>
-<meta property="og:url" content="http://chrismcclure.github.io/" />
-<meta property="og:image" content="images/king-large-pointing.jpg" />
-<meta property="og:site_name" content="Chris McClure GitHub" />
-
-
+    <!--Custom Text-->
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <!--Custom Text-->
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 </head>
-<body  onload="popluarToDoLists(); ">
 
-    <div class="container-fluid header">
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        <a class="navbar-brand" href="#">Your Super Cool To Do List!</a>
+<body>
+<!--Nav Bar-->
+<nav class="navbar navbar-default navbar-fixed-top nav-props">
+    <div class="container">
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand white-text" href="#page-top">Chris McClure</a>
+        </div>
+        <!-- end header navbar-->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden active">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll white-text">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a class="white-text" href="#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        <!-- End Navbar Collapse-->
     </div>
+     <!--End Container -->
+</nav>
 
- </nav>
-</div>
-
-
-
-<div class="jumbotron">
-  <div class="container">
-      <h1>Your Super Cool To Do List</h1>
-      <h2>The Best To Do List Ever!</h2>
-  </div>
-</div>
-
-<div class="help hide">
-     <h2 class="imageH2">I'm Leonidas, King of the Spartans and </h2>
-   <div class="imageholder">
-    <img src="images/css-angry-king.jpg"  class="circle "alt="king face">
+<!--Header Section-->
+<section class="header">
+    <div class="container-fluid  flexbox-holder">
+        <div class="row flexbox-holder">
+            <div class="col-lg-8 col-xs-8 profile-img-holder ">
+                <img src="images/cssready-chops.png" alt="Chris McClure Picture" class="img-responsive img-circle img-border">
+            </div>
+        </div>
+        <span class="center-text white-text my-name">Chris McClure</span>
+        <img src="images/white-hr.png" alt="">
+        <span class="center-text white-text skills">Web Developer - C# Guy - ASP.NET Wanna Be</span>
     </div>
+</section>
+<!--End Header Section-->
 
-      <p>your helper while creating and maintaining your to do lists.  Any time you need help, click the orange help button on the top navbar and my 300 Spartans and I will be at your service.</p>
-    <p>I see there are no current list avialable.</p>
-    <p>  Your first step is to create a list.</p>
-</div>
+<!--Porfolio Section  -->
+<section class="projects">
+    <div class="container">
+        <div class="row">
+           <div class="col-12-lg flexbox-holder">
+            <h2 class="blue-text">Projects</h2>
+            <img src="images/blue-hr.png" alt="blue horizontal rule">
+            </div>
+            <div class="row flexbox-projects">
+                <div class="col-lg-4 col-md-4  col-sm-8 col-xs-10 project-item" id="project1"><!--Start Project 1-->
+                   <h3>Project 1</h3>
+                    <a href="#"><img class="project-img" src="images/fullhouse.jpg" alt="test"></a>
+                    <p class="project-des">Here is all the cool stuff about this project1 . </p>
+                    <p>Mad Skills I Used</p>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>jQuery</li>
+                        <li>My Brain</li>
+                    </ul>
+                </div>
+<!-- End Project 1-->
 
-<div class="selectUser bluediv">
-    <h2> Please Select Your To Do List</h2>
-    <ul id="users">
-    <p id="noUsers"></p>
-    </ul>
-</div>
+                <div class="col-lg-4 col-md-4  col-sm-8 col-xs-10 project-item" id="project2"> <!--Project 2-->
+                   <h3>Project 2</h3>
+                    <a href="#"><img class="project-img" src="images/fullhouse.jpg" alt="test"></a>
+                    <p class="project-des">Here is all the cool stuff about this project 2. </p>
+                    <p>Mad Skills I Used</p>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>jQuery</li>
+                        <li>My Brain</li>
+                    </ul>
+                </div>
+                <!-- End Project 2-->
 
-       <h2 id="or">OR</h2>
-    <div class="bluediv">
-         <h2>Create A New Personal To Do List</h2>
-        <p id="dupName"></p>
-        <p id="inputNewUser">Input Your Name:</p> <p><input type="text" id="username" onkeydown="engageButton()" oninput="enableButtons(username.value)" placeholder="Who's To Do List Is This?" autofocus> </p>
-        <p>
-        <button class="btn btn-default btn-lg" id="button" disabled onclick="makeNewUserObject(username.value)">Click To Make A New To Do List</button>
-        </p>
+                   <div class="col-lg-4 col-md-4 col-sm-8 col-xs-10 project-item" id="project3"> <!--Project 3-->
+                   <h3>Project 3</h3>
+                    <a href="#"><img class="project-img" src="images/fullhouse.jpg" alt="test"></a>
+                    <p class="project-des">Here is all the cool stuff about Project 3. </p>
+                    <p>Mad Skills I Used</p>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>jQuery</li>
+                        <li>My Brain</li>
+                    </ul>
+                </div>
+                <!-- End Project 3-->
 
-</div>
+                    <div class="col-lg-4 col-md-4  col-sm-8 col-xs-10 project-item" id="project4"> <!--Project 4-->
+                   <h3>Project 4</h3>
+                    <a href="#"><img class="project-img" src="images/fullhouse.jpg" alt="test"></a>
+                    <p class="project-des">Here is all the cool stuff about Project 3. </p>
+                    <p>Mad Skills I Used</p>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>jQuery</li>
+                        <li>My Brain</li>
+                    </ul>
+                </div>
+                <!-- End Project 4-->
+
+            </div>
+        </div>
+    </div>
+</section>
+<!--End The Project Section -->
+
+<section class="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 flexbox-holder">
+                <h2 class="white-text ">About</h2>
+                <img src="images/white-hr.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            .
+        </div>
+    </div>
+</section>
 
 
 
 
-    <footer class="footer">
-        <p class="footerItems">&copy;2015 McClure Industries</p>
-        <p class="footerItems"><a href="https://github.com/chrismcclure" target="_blank"><img src="images/github_icon.png" height="40" width="40" alt="GitHub Icon"> My GitHub Account.</a></p>
-         <p class="footerItems">Chris Rules!</p>
-    </footer>
 
- <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<!-- Latest compiled and minified JavaScript -->
+    <!--Current Google CDN of JQuery.  2.0+   -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <!--Javascript file that I built with my own hands-->
-    <script type="text/javascript" src="todojs.js"> </script>
 </body>
 </html>
