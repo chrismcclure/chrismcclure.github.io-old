@@ -16,12 +16,11 @@ sect {
     text-align: center;
     display: block;
 }
-.center-display-block{
+.center-display-block {
     margin: 0 auto;
     float: none;
     display: block;
 }
-
 h1,
 h2,
 h3,
@@ -29,22 +28,21 @@ h4,
 h5,
 h6,
 .navbar-default .navbar-nav>li>a,
-.navbar-default .navbar-brand, .my-name {
+.navbar-default .navbar-brand,
+.my-name {
     text-transform: uppercase;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
 }
 .my-name {
     font-size: 5em;
-
 }
 .skills {
-
     font-size: 3em;
     font-weight: 300;
     font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-h2{
+h2 {
     font-size: 8em;
 }
 
@@ -69,8 +67,7 @@ h2{
     flex-direction: column;
     align-items: center;
 }
-
-.hr-images{
+.hr-images {
     width: 80%;
 }
 
@@ -96,7 +93,6 @@ h2{
 }
 .profile-img-holder {
     margin-bottom: 30px;
-
 }
 .img-border {
     border: 10px solid #2c3e50;
@@ -154,12 +150,10 @@ h2{
     background-color: #18BC9C;
     padding: 100px 0px 100px 0px;
 }
-
 .about-text {
-	font-size: 4em;
+    font-size: 4em;
 }
-
-#hire-link{
+#hire-link {
     display: block;
     border: 5px solid white;
     border-radius: 15px;
@@ -172,20 +166,18 @@ h2{
     padding-top: 40px;
     text-decoration: none;
 }
-
-#hire-link:hover{
-
+#hire-link:hover {
     background-color: #fff;
     color: #18BC9C;
 }
 
 /*contact*/
 
-form{
+form {
     margin: 50px 0px;
 }
-
-form input, textarea {
+form input,
+textarea {
     width: 100%;
     height: 70px;
     border: 1px solid #18bc9c;
@@ -193,14 +185,11 @@ form input, textarea {
     padding: 0px 0px 0px 10px;
     font-size: 22px;
 }
-
-form textarea{
+form textarea {
     height: 150px;
     padding-top: 10px;
 }
-
-
-form input[type="submit"]{
+form input[type="submit"] {
     width: 10%;
     background-color: #18bc9c;
     border: none;
@@ -208,75 +197,66 @@ form input[type="submit"]{
     height: 55px;
     border-radius: 5px;
 }
-
-form input[type="submit"]:hover{
-     background-color: #128F76;
+form input[type="submit"]:hover {
+    background-color: #128F76;
 }
 
-
 /*Plceholder Styling*/
-::-webkit-input-placeholder{
-	color: darkgrey;
-	font-size: 22px;
+
+::-webkit-input-placeholder {
+    color: darkgrey;
+    font-size: 22px;
     font-weight: bold;
     margin: 0px;
 }
-::-webkit-textarea-placeholder{
-	color: darkgrey;
-	font-size: 18px;
+::-webkit-textarea-placeholder {
+    color: darkgrey;
+    font-size: 18px;
     font-weight: bold;
 }
-
 input::-moz-placeholder {
-	color: rgba(0,5,143,.5);
-	text-transform: uppercase;
+    color: rgba(0, 5, 143, .5);
+    text-transform: uppercase;
 }
-input:-moz-placeholder {   /* Older versions of Firefox */
-	color: rgba(0,5,143,.5);
-	text-transform: uppercase;
+input:-moz-placeholder {
+    /* Older versions of Firefox */
+    color: rgba(0, 5, 143, .5);
+    text-transform: uppercase;
 }
 input:-ms-input-placeholder {
-	color: rgba(0,5,143,.5);
-	text-transform: uppercase;
+    color: rgba(0, 5, 143, .5);
+    text-transform: uppercase;
 }
+
 /*footer*/
 
-footer{
+footer {
     background-color: #2c3e50;
 }
-
-footer > *{
+footer > * {
     color: #fff;
 }
-
-.my-info{
+.my-info {
     padding: 25px 0px;
 }
-
 .copy {
     padding: 20px 0px;
-	background-color: #233140;
+    background-color: #233140;
 }
+
 /*This is when the screen is changes from small to big*/
 
-@media(min-width: 480px){
-    .hr-images{
-    width: 60%;
-
-}
-
-    h2{
+@media(min-width: 480px) {
+    .hr-images {
+        width: 60%;
+    }
+    h2 {
         font-size: 7em;
     }
-
     .about-text {
-	font-size: 3em;
+        font-size: 3em;
     }
 }
-
-
-
-
 @media(min-width: 768px) {
     .nav-props {
         padding-top: 30px;
@@ -299,8 +279,4 @@ footer > *{
         justify-content: center;
     }
 }
-
-@media(min-width: 1200px){
-
-
-}
+@media(min-width: 1200px) {}
