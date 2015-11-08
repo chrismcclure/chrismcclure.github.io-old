@@ -20,6 +20,7 @@ sect {
     margin: 0 auto;
     float: none;
     display: block;
+    overflow: visible;
 }
 h1,
 h2,
@@ -34,16 +35,9 @@ h6,
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
 }
-.my-name {
-    font-size: 5em;
-}
-.skills {
-    font-size: 3em;
-    font-weight: 300;
-    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
+
 h2 {
-    font-size: 8em;
+    font-size: 7em;
 }
 
 /*Change the color of fonts in the navbar*/
@@ -68,7 +62,11 @@ h2 {
     align-items: center;
 }
 .hr-images {
-    width: 80%;
+  min-width: 100%;
+}
+
+.red{
+    outline: 1px solid red;
 }
 
 /**********************************/
@@ -97,12 +95,22 @@ h2 {
 .img-border {
     border: 10px solid #2c3e50;
 }
+.my-name {
+    font-size: 4.5em;
+}
+.skills {
+    font-size: 3.5em;
+    font-weight: 100;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
 /*Projects*/
 
 .projects {
-    padding: 100px 0px 100px 0px;
+    padding: 150px 0px 100px 0px;
 }
+
+
 .project-item {
     display: inline-block;
     max-width: 400;
@@ -148,16 +156,18 @@ h2 {
 
 .about {
     background-color: #18BC9C;
-    padding: 100px 0px 100px 0px;
+    padding: 100px 0px 150px 0px;
 }
 .about-text {
-    font-size: 4em;
+    font-size: 3em;
+    font-weight: 200;
+    margin: 50px 0px;
 }
 #hire-link {
     display: block;
     border: 5px solid white;
     border-radius: 15px;
-    width: 70%;
+    width: 80%;
     height: 175px;
     margin-top: 25px;
     color: #fff;
@@ -173,29 +183,34 @@ h2 {
 
 /*contact*/
 
+.contact{
+    padding: 100px 0px;
+}
+
 form {
     margin: 50px 0px;
 }
 form input,
 textarea {
     width: 100%;
-    height: 70px;
+    height: 150px;
     border: 1px solid #18bc9c;
     border-radius: 5px;
     padding: 0px 0px 0px 10px;
-    font-size: 22px;
+    font-size: 3em;
 }
 form textarea {
-    height: 150px;
+    height: 300px;
     padding-top: 10px;
+    margin-bottom: 20px;
 }
 form input[type="submit"] {
-    width: 10%;
+    width: 40%;
     background-color: #18bc9c;
     border: none;
     color: #fff;
-    height: 55px;
-    border-radius: 5px;
+    height: 150px;
+    border-radius: 10px;
 }
 form input[type="submit"]:hover {
     background-color: #128F76;
@@ -205,7 +220,7 @@ form input[type="submit"]:hover {
 
 ::-webkit-input-placeholder {
     color: darkgrey;
-    font-size: 22px;
+    font-size: 1em;
     font-weight: bold;
     margin: 0px;
 }
@@ -232,32 +247,53 @@ input:-ms-input-placeholder {
 
 footer {
     background-color: #2c3e50;
+    padding-top: 100px;
 }
 footer > * {
     color: #fff;
 }
-.my-info {
-    padding: 25px 0px;
+
+footer  h3{
+    font-size: 4.5em;
+    margin-bottom: 25px;
+}
+
+footer p{
+    font-size: 4em;
+    font-weight: 100;
+}
+
+.my-info div{
+    margin-bottom: 50px;
+    padd
 }
 .copy {
     padding: 20px 0px;
     background-color: #233140;
 }
 
+.copy p{
+    font-size: 3em;
+    font-weight: 100;
+}
+
+.logos {
+	width: 200px;
+}
+
+#linkedin {
+    margin-left: 15px;
+}
+
 /*This is when the screen is changes from small to big*/
 
-@media(min-width: 480px) {
-    .hr-images {
-        width: 60%;
-    }
-    h2 {
-        font-size: 7em;
-    }
-    .about-text {
-        font-size: 3em;
-    }
+@media(max-width: 480px) {
+
+/*whole page designed mobile fist.  Shouldn't need this query*/
 }
-@media(min-width: 768px) {
+
+
+@media(min-width: 481px ) and (max-width: 768px) {
     .nav-props {
         padding-top: 30px;
         height: 100px;
@@ -272,11 +308,11 @@ footer > * {
         padding: 160px 0px 50px 0px;
     }
 }
-@media(min-width: 992px) {
+@media(min-width: 768px) and (max-width: 992px) {
     .flexbox-projects {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
     }
 }
-@media(min-width: 1200px) {}
+@media(min-width: 992px) and (min-width: 1200px) {}
