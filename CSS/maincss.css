@@ -3,8 +3,8 @@
 
 /*fonts*/
 
-sect {
-    font-size: 20px;
+body {
+    font-size: 16px;
 }
 .white-text {
     color: #FFF;
@@ -35,7 +35,6 @@ h6,
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
 }
-
 h2 {
     font-size: 7em;
 }
@@ -62,10 +61,9 @@ h2 {
     align-items: center;
 }
 .hr-images {
-  min-width: 100%;
+    min-width: 100%;
 }
-
-.red{
+.red {
     outline: 1px solid red;
 }
 
@@ -109,8 +107,6 @@ h2 {
 .projects {
     padding: 150px 0px 100px 0px;
 }
-
-
 .project-item {
     display: inline-block;
     max-width: 400;
@@ -183,10 +179,9 @@ h2 {
 
 /*contact*/
 
-.contact{
+.contact {
     padding: 100px 0px;
 }
-
 form {
     margin: 50px 0px;
 }
@@ -217,7 +212,10 @@ form input[type="submit"]:hover {
 }
 
 /*Plceholder Styling*/
+
+
 /*A lot of code to make placeholders look smooth*/
+
 ::-webkit-input-placeholder {
     color: darkgrey;
     font-size: 1em;
@@ -230,14 +228,14 @@ form input[type="submit"]:hover {
     font-weight: bold;
 }
 input::-moz-placeholder {
-   color: darkgrey;
+    color: darkgrey;
     font-size: 1em;
     font-weight: bold;
     margin: 0px;
 }
 textarea::-moz-placeholder {
     color: darkgrey;
-    font-size: 18px;
+    font-size: 1em;
     font-weight: bold;
 }
 input:-moz-placeholder {
@@ -252,17 +250,18 @@ textarea:-moz-placeholder {
     font-weight: bold;
 }
 input:-ms-input-placeholder {
-   color: darkgrey;
+    color: darkgrey;
     font-size: 1em;
     font-weight: bold;
     margin: 0px;
 }
-textarea:-ms-textarea-placeholder {
-   color: darkgrey;
+textarea:-ms-input-placeholder {
+    color: darkgrey;
     font-size: 1em;
     font-weight: bold;
     margin: 0px;
 }
+
 /*footer*/
 
 footer {
@@ -272,18 +271,15 @@ footer {
 footer > * {
     color: #fff;
 }
-
-footer  h3{
+footer h3 {
     font-size: 4.5em;
     margin-bottom: 25px;
 }
-
-footer p{
+footer p {
     font-size: 4em;
     font-weight: 100;
 }
-
-.my-info div{
+.my-info div {
     margin-bottom: 50px;
     padd
 }
@@ -292,29 +288,21 @@ footer p{
     padding: 20px 0px;
     background-color: #233140;
 }
-
-.copy p{
+.copy p {
     font-size: 3em;
     font-weight: 100;
 }
-
 .logos {
-	width: 200px;
+    width: 200px;
 }
-
 #linkedin {
     margin-left: 15px;
 }
 
 /*This is when the screen is changes from small to big*/
 
-@media(max-width: 480px) {
-
-/*whole page designed mobile fist.  Shouldn't need this query*/
-}
-
-
-@media(min-width: 481px ) and (max-width: 768px) {
+@media (min-width: 481px) {
+    /*  Navbar Changes */
     .nav-props {
         padding-top: 30px;
         height: 100px;
@@ -323,13 +311,40 @@ footer p{
     }
     .navbar-default .navbar-brand {
         color: #fff;
-        font-size: 1.8em;
+        font-size: 3em;
     }
     .header {
         padding: 160px 0px 50px 0px;
     }
+    /* font changes*/
+    body {
+        font-size: 10px;
+    }
+    .skills {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 6em;
+    }
+    .about-text {
+        font-size: 2.5em;
+    }
+    /*Other important stuff that needs to change*/
+    #hire-link {
+        width: 50%;
+    }
+    form input {
+        height: 75px;
+        font-size: 2em;
+    }
+    form textarea {
+        height: 200px;
+    }
+    form input[type="submit"] {
+        height: 100px;
+    }
 }
-@media(min-width: 768px) and (max-width: 992px) {
+@media(min-width: 768px) {
     .flexbox-projects {
         flex-direction: row;
         flex-wrap: wrap;
