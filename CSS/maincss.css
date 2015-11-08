@@ -3,7 +3,7 @@
 
 /*fonts*/
 
-body {
+sect {
     font-size: 20px;
 }
 .white-text {
@@ -35,18 +35,17 @@ h6,
     font-weight: 700;
 }
 .my-name {
-    font-size: 2em;
-
+    font-size: 5em;
 
 }
 .skills {
 
-    font-size: 1em;
+    font-size: 3em;
     font-weight: 300;
     font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.h2 {
-    font-size: 3em;
+h2{
+    font-size: 8em;
 }
 
 /*Change the color of fonts in the navbar*/
@@ -71,7 +70,10 @@ h6,
     align-items: center;
 }
 
-
+.hr-images{
+    width: 80%;
+    border: 1px solid red;
+}
 
 /**********************************/
 
@@ -151,10 +153,51 @@ h6,
 
 .about {
     background-color: #18BC9C;
-    padding: 100px 0px 50px 0px;
+    padding: 100px 0px 100px 0px;
 }
 
+.about-text {
+	font-size: 4em;
+}
+
+#hire-link{
+    display: block;
+    border: 5px solid white;
+    border-radius: 15px;
+    width: 70%;
+    height: 175px;
+    margin-top: 25px;
+    color: #fff;
+    font-size: 4em;
+    text-align: center;
+    padding-top: 40px;
+    text-decoration: none;
+}
+
+#hire-link:hover{
+
+    background-color: #fff;
+    color: #18BC9C;
+}
 /*This is when the screen is changes from small to big*/
+
+@media(min-width: 480px){
+    .hr-images{
+    width: 60%;
+    border: 1px solid red;
+}
+
+    h2{
+        font-size: 7em;
+    }
+
+    .about-text {
+	font-size: 3em;
+    }
+}
+
+
+
 
 @media(min-width: 768px) {
     .nav-props {
@@ -177,4 +220,9 @@ h6,
         flex-wrap: wrap;
         justify-content: center;
     }
+}
+
+@media(min-width: 1200px){
+
+
 }
