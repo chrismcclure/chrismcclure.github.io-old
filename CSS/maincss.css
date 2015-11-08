@@ -217,7 +217,7 @@ form input[type="submit"]:hover {
 }
 
 /*Plceholder Styling*/
-
+/*A lot of code to make placeholders look smooth*/
 ::-webkit-input-placeholder {
     color: darkgrey;
     font-size: 1em;
@@ -230,19 +230,39 @@ form input[type="submit"]:hover {
     font-weight: bold;
 }
 input::-moz-placeholder {
-    color: rgba(0, 5, 143, .5);
-    text-transform: uppercase;
+   color: darkgrey;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0px;
+}
+textarea::-moz-placeholder {
+    color: darkgrey;
+    font-size: 18px;
+    font-weight: bold;
 }
 input:-moz-placeholder {
-    /* Older versions of Firefox */
-    color: rgba(0, 5, 143, .5);
-    text-transform: uppercase;
+    color: darkgrey;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0px;
+}
+textarea:-moz-placeholder {
+    color: darkgrey;
+    font-size: 18px;
+    font-weight: bold;
 }
 input:-ms-input-placeholder {
-    color: rgba(0, 5, 143, .5);
-    text-transform: uppercase;
+   color: darkgrey;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0px;
 }
-
+textarea:-ms-textarea-placeholder {
+   color: darkgrey;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0px;
+}
 /*footer*/
 
 footer {
