@@ -268,6 +268,7 @@ footer p{
     padd
 }
 .copy {
+    margin-top: 25px;
     padding: 20px 0px;
     background-color: #233140;
 }
