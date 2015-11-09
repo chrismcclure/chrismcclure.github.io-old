@@ -272,11 +272,11 @@ footer > * {
     color: #fff;
 }
 footer h3 {
-    font-size: 4.5em;
+    font-size: 4em;
     margin-bottom: 25px;
 }
 footer p {
-    font-size: 4em;
+    font-size: 3.5em;
     font-weight: 100;
 }
 .my-info div {
@@ -293,7 +293,7 @@ footer p {
     font-weight: 100;
 }
 .logos {
-    width: 200px;
+    width: 150px;
 }
 #linkedin {
     margin-left: 15px;
@@ -301,7 +301,7 @@ footer p {
 
 /*This is when the screen is changes from small to big*/
 
-@media (min-width: 481px) {
+@media (min-width: 550px) {
     /*  Navbar Changes */
     .nav-props {
         padding-top: 30px;
@@ -331,24 +331,27 @@ footer p {
     }
     /*Other important stuff that needs to change*/
     #hire-link {
-        width: 50%;
+        width: 80%;
     }
     form input {
-        height: 75px;
+        height: 100px;
         font-size: 2em;
     }
     form textarea {
         height: 200px;
     }
     form input[type="submit"] {
-        height: 100px;
+        height: 125px;
     }
 }
-@media(min-width: 768px) {
+@media(min-width: 850px) {
     .flexbox-projects {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
     }
 }
-@media(min-width: 992px) and (min-width: 1200px) {}
+
+@media(min-width: 992px) {}
+
+@media(min-width: 1200px) {}
