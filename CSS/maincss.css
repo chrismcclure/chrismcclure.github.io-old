@@ -43,7 +43,7 @@ h2 {
 
 .navbar-default .navbar-nav>li>a {
     color: #fff;
-    font-size: .7em
+    font-size: 2em
 }
 .navbar-default .navbar-brand {
     color: #fff;
@@ -94,10 +94,11 @@ h2 {
     border: 10px solid #2c3e50;
 }
 .my-name {
-    font-size: 4.5em;
+    font-size: 5em;
 }
 .skills {
-    font-size: 3.5em;
+    font-size: 10em;
+    color: red;
     font-weight: 100;
     font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -298,10 +299,7 @@ footer p {
 #linkedin {
     margin-left: 15px;
 }
-
-/*This is when the screen is changes from small to big*/
-
-@media (min-width: 550px) {
+@media (min-width: 480px) {
     /*  Navbar Changes */
     .nav-props {
         padding-top: 30px;
@@ -322,9 +320,11 @@ footer p {
     }
     .skills {
         font-size: 3em;
+        color: blue;
     }
     h2 {
         font-size: 6em;
+        color: yellow;
     }
     .about-text {
         font-size: 2.5em;
@@ -345,13 +345,25 @@ footer p {
     }
 }
 @media(min-width: 850px) {
+    html {
+        font-size: 8px;
+    }
     .flexbox-projects {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
     }
 }
-
-@media(min-width: 992px) {}
-
+@media(min-width:1025px) {
+    #hire-link {
+        width: 30%;
+        height: 75px;
+        font-size: 2.5em;
+        padding-top: 10px;
+    }
+    h2 {
+        font-size: 4em;
+        color: green;
+    }
+}
 @media(min-width: 1200px) {}
