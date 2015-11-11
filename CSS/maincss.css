@@ -1,25 +1,12 @@
 /*Mobile First CSS*/
-
-
-/*
-html, body{
-
-    width: auto !important;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden !important;
-
-}
-*/
-
 /*fonts*/
 
 
 body {
     font-size: 16px;
+
 }
-.white-text {
+white-text {
     color: #FFF;
 }
 .blue-text {
@@ -170,6 +157,7 @@ margin-right: 0px;
 .about {
     background-color: #18BC9C;
     padding: 100px 0px 150px 0px;
+    overflow: hidden;
 }
 .about-text {
     font-size: 1.5em;
