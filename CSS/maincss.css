@@ -1,7 +1,16 @@
 /*Mobile First CSS*/
 
 
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
 /*fonts*/
+
 
 body {
     font-size: 16px;
@@ -20,7 +29,7 @@ body {
     margin: 0 auto;
     float: none;
     display: block;
-    overflow: none;
+
 }
 h1,
 h2,
@@ -47,7 +56,7 @@ h2 {
 }
 .navbar-default .navbar-brand {
     color: #fff;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 /**********************************/
@@ -74,6 +83,9 @@ h2 {
 
 
 /*Nav Bar*/
+.navvar{
+margin-right: 0px;
+}
 
 .nav-props {
     background-color: #2c3e50;
@@ -300,20 +312,7 @@ footer p {
     margin-left: 15px;
 }
 @media (min-width: 480px) and (max-width: 799px) {
-    /*  Navbar Changes */
-    .nav-props {
-        padding-top: 30px;
-        height: 100px;
-        margin-bottom: 50px;
-        /*Need a smooth transition in height here*/
-    }
-    .navbar-default .navbar-brand {
-        color: #fff;
-        font-size: 3em;
-    }
-    .header {
-        padding: 160px 0px 50px 0px;
-    }
+
     /* font changes*/
     body {
         font-size: 10px;
@@ -345,7 +344,20 @@ footer p {
     }
 }
 @media (min-width: 800px) and (max-width: 1024px) {
-
+ /*  Navbar Changes */
+    .nav-props {
+        padding-top: 30px;
+        height: 100px;
+        margin-bottom: 50px;
+        /*Need a smooth transition in height here*/
+    }
+    .navbar-default .navbar-brand {
+        color: #fff;
+        font-size: 2em;
+    }
+    .header {
+        padding: 160px 0px 50px 0px;
+    }
 
     .skills{
         color: purple;
