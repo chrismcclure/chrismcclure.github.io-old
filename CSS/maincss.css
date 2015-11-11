@@ -43,11 +43,11 @@ h2 {
 
 .navbar-default .navbar-nav>li>a {
     color: #fff;
-    font-size: 2em
+    font-size: 1em
 }
 .navbar-default .navbar-brand {
     color: #fff;
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 /**********************************/
@@ -345,9 +345,7 @@ footer p {
     }
 }
 @media (min-width: 800px) and (max-width: 1024px) {
-    html {
-        font-size: 8px;
-    }
+
 
     .skills{
         color: purple;
@@ -363,16 +361,34 @@ footer p {
     #hire-link {
         width: 30%;
         height: 75px;
-        font-size: 2.5em;
+        font-size: 2em;
         padding-top: 10px;
     }
+     .flexbox-projects {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
+      .my-name {
+	    font-size: 3em;
+    }
     .skills{
         color: pink;
+        font-size: 2em;
     }
     h2 {
-        font-size: 4em;
+        font-size: 3em;
         color: green;
     }
+    footer{
+        padding-top: 20px;
+    }
+
 }
-@media(min-width: 1200px) {}
+@media(min-width: 1200px) {
+ .flexbox-projects {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }}
