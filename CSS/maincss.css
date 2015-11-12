@@ -64,6 +64,10 @@ h2 {
     outline: 1px solid red;
 }
 
+.full-width{
+    width: 100%;
+    background: red
+}
 /**********************************/
 
 
@@ -157,9 +161,15 @@ margin-right: 0px;
     overflow: hidden;
 }
 .about-text {
-    font-size: 1.5em;
+    font-size: 1.6em;
     font-weight: 200;
-    padding: 20px 20px;
+
+}
+
+.center-words{
+      margin: 0 auto;
+    float: none;
+    display: block;
 }
 #hire-link {
     display: block;
@@ -226,7 +236,7 @@ form input[type="submit"]:hover {
 }
 ::-webkit-textarea-placeholder {
     color: darkgrey;
-    font-size: 18px;
+    font-size: 1em;
     font-weight: bold;
 }
 input::-moz-placeholder {
@@ -248,7 +258,7 @@ input:-moz-placeholder {
 }
 textarea:-moz-placeholder {
     color: darkgrey;
-    font-size: 18px;
+    font-size: 1em;
     font-weight: bold;
 }
 input:-ms-input-placeholder {
@@ -299,39 +309,50 @@ footer p {
 #linkedin {
     margin-left: 15px;
 }
-@media (min-width: 480px) and (max-width: 799px) {
+@media (min-width: 480px) {
 
     /* font changes*/
     body {
-        font-size: 10px;
+        font-size: 14px;
+    }
+    .profile-img-holder{
+        width: 80%;
+    }
+    .my-name {
+	    font-size: 2.5em;
+
     }
     .skills {
-        font-size: 3em;
+        font-size: 1.8em;
         color: yellow;
     }
     h2 {
-        font-size: 6em;
+        font-size: 3.5em;
         color: yellow;
     }
+    .hr-images {
+    min-width: 80%;
+    }
     .about-text {
-        font-size: 2.5em;
+        font-size: 1.8em;
     }
     /*Other important stuff that needs to change*/
     #hire-link {
-        width: 80%;
+        width: 70%;
+        font-size: 2em;
     }
     form input {
-        height: 100px;
-        font-size: 2em;
+        height: 60px;
+        font-size: 1.5em;
     }
     form textarea {
         height: 200px;
     }
     form input[type="submit"] {
-        height: 125px;
+        height: 80px;
     }
 }
-@media (min-width: 800px) and (max-width: 1024px) {
+@media (min-width: 768px)  {
  /*  Navbar Changes */
     .nav-props {
         padding-top: 30px;
@@ -346,10 +367,13 @@ footer p {
     .header {
         padding: 160px 0px 50px 0px;
     }
-
+    .navbar-default .navbar-nav>li>a {
+    color: #fff;
+    font-size: 1.3em
+    }
     .skills{
         color: purple;
-        font-size: 1em;
+        font-size: 2em;
     }
     .flexbox-projects {
         flex-direction: row;
@@ -357,20 +381,19 @@ footer p {
         justify-content: center;
     }
 }
-@media(min-width:1025px) {
-    #hire-link {
-        width: 30%;
-        height: 75px;
-        font-size: 2em;
-        padding-top: 10px;
-    }
-     .flexbox-projects {
+@media(min-width:1000px) {
+    .flexbox-projects {
+        margin-top: 50px;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: left;
     }
-
-      .my-name {
+    .center-words{
+        margin: 0;
+        display: inline-block;
+        float: left
+    }
+    .my-name {
 	    font-size: 3em;
     }
     .skills{
@@ -378,8 +401,18 @@ footer p {
         font-size: 2em;
     }
     h2 {
-        font-size: 3em;
+        font-size: 3.5em;
         color: green;
+    }
+    .about-text {
+	    margin-top: 50px;
+    }
+    #hire-link {
+        width: 30%;
+        height: 75px;
+        font-size: 2em;
+        margin-top: 40px;
+        padding-top: 10px;
     }
     footer{
         padding-top: 20px;
@@ -387,8 +420,5 @@ footer p {
 
 }
 @media(min-width: 1200px) {
- .flexbox-projects {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }}
+
+}
