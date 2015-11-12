@@ -2,11 +2,8 @@
 /*fonts*/
 
 
-body {
-    font-size: 16px;
 
-}
-white-text {
+.white-text {
     color: #FFF;
 }
 .blue-text {
@@ -97,11 +94,11 @@ margin-right: 0px;
     border: 10px solid #2c3e50;
 }
 .my-name {
-    font-size: 2em;
+    font-size: 2.3em;
 }
 .skills {
-    font-size: 1.5em;
-    color: red;
+    font-size: 1.6em;
+
     font-weight: 100;
     font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -109,7 +106,7 @@ margin-right: 0px;
 /*Projects*/
 
 .projects {
-    padding: 150px 0px 100px 0px;
+    padding: 50px 0px 85px 0px;
 }
 .project-item {
 /*    display: inline-block;*/
@@ -156,13 +153,13 @@ margin-right: 0px;
 
 .about {
     background-color: #18BC9C;
-    padding: 100px 0px 150px 0px;
+    padding: 50px 0px 100px 0px;
     overflow: hidden;
 }
 .about-text {
     font-size: 1.5em;
     font-weight: 200;
-    margin: 50px 0px;
+    padding: 20px 20px;
 }
 #hire-link {
     display: block;
@@ -185,7 +182,7 @@ margin-right: 0px;
 /*contact*/
 
 .contact {
-    padding: 100px 0px;
+    padding: 50px 0px;
 }
 form {
     margin: 50px 0px;
@@ -193,11 +190,11 @@ form {
 form input,
 textarea {
     width: 100%;
-    height: 80px;
+    height: 40px;
     border: 1px solid #18bc9c;
     border-radius: 5px;
     padding: 0px 0px 0px 10px;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 form textarea {
     height: 150px;
@@ -271,7 +268,7 @@ textarea:-ms-input-placeholder {
 
 footer {
     background-color: #2c3e50;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 footer > * {
     color: #fff;
@@ -285,11 +282,10 @@ footer p {
     font-weight: 100;
 }
 .my-info div {
-    margin-bottom: 50px;
-    padd
+    margin-bottom: 20px;
 }
 .copy {
-    margin-top: 25px;
+    margin-top: 10px;
     padding: 20px 0px;
     background-color: #233140;
 }
@@ -298,7 +294,7 @@ footer p {
     font-weight: 100;
 }
 .logos {
-    width: 150px;
+    width: 100px;
 }
 #linkedin {
     margin-left: 15px;
